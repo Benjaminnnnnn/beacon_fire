@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.input-container {
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  width: 90%;
+  height: 100%;
+  background-color: #e8e8ee;
+  align-items: center;
+  border: 1px solid #d0d8da;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+
+input {
+  margin-left: 5px;
+  display: inline-block;
+  width: 80%;
+  border: none;
+  flex-grow: 1;
+  border-left: 2px solid #d0d8da;
+  line-height: 1.2em;
+  padding: 10px 5px;
+}
+
+.input-container--button {
+  background-color: white;
+  color: #68747b;
+  border: 1px solid #68747b;
+  height: 100%;
+  font-size: 1.2em;
+  padding: 3px 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.alert {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert > p {
+  margin: 0;
+}
+
+.alert .dismiss {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: #664d03;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100%;
+  padding: 5px 10px;
+  table-layout: fixed;
+}
+
+th:nth-child(1),
+td:first-child {
+  text-align: center;
+}
+
+th {
+  padding-top: 5px;
+}
+
+td {
+  padding: 10px 5px;
+  word-wrap: break-word;
+}

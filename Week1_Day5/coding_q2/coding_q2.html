@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead>
+          <th>Product Name</th>
+          <th>Product Category</th>
+          <th>Product Price</th>
+          <th>Action</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>M&M</td>
+            <td>Snacks</td>
+            <td>$1.99</td>
+            <td><button>Delete</button></td>
+          </tr>
+
+          <tr>
+            <td>Table</td>
+            <td>Furniture</td>
+            <td>$199</td>
+            <td><button>Delete</button></td>
+          </tr>
+
+          <tr>
+            <td>Kale</td>
+            <td>Vegetables</td>
+            <td>$2.49</td>
+            <td><button>Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form>
+        <h1>Add Product</h1>
+
+        <div>
+          <label for="name">Product Name:</label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="category">Product Category:</label>
+          <input type="text" name="category" id="category" required />
+
+          <label for="price">Product Price:</label>
+          <input type="text" name="price" id="price" required />
+
+          <button>Add New</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

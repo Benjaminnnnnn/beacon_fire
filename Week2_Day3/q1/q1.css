@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  table-layout: fixed;
+  width: 95%;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+td {
+  word-wrap: break-word;
+  padding: 5px 5px;
+}
+
+td:first-child {
+  text-align: center;
+}

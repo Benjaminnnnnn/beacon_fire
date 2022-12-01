@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1">1</button>
+    <button id="btn2">2</button>
+    <button id="btn3">3</button>
+
+    <script>
+      // a) The console logs "you just clicked #4 button".
+      //    When we clicked on the third button, its event handler were called and logs i.
+      //    By the time we were exiting the for loop, i was at value 4.
+      //    And because we used a var keyword to declare i, it's globally accessible.
+      //    Therefore, when we actually logs the value of i at event handler calls,
+      //    we're seeing 4 instead of the expected value 3.
+
+      //   for (var i = 1; i <= 3; i++) {
+      //     document
+      //       .getElementById(`btn${i}`)
+      //       .addEventListener("click", function () {
+      //         console.log(`you just clicked #${i} button`);
+      //       });
+      //   }
+
+      /////////////////////////////////////////////////////////////////////////
+
+      // b) To fix this issue before ES6, we would use IIFE.
+      //   for (var i = 1; i <= 3; i++) {
+      //     (function (i) {
+      //       document
+      //         .getElementById(`btn${i}`)
+      //         .addEventListener("click", function () {
+      //           console.log(`you just clicked #${i} button`);
+      //         });
+      //     })(i);
+      //   }
+
+      /////////////////////////////////////////////////////////////////////////
+
+      // b) To fix this issue after ES6, we would use the let keyword.
+      //   for (let i = 1; i <= 3; i++) {
+      //     document
+      //       .getElementById(`btn${i}`)
+      //       .addEventListener("click", function () {
+      //         console.log(`you just clicked #${i} button`);
+      //       });
+      //   }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      .gender-title,
+      .checkbox-title {
+        margin-top: 0;
+      }
+    </style>
+    <title>Week 1 Day 1 - Coding Question 4</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <p>Personal Details</p>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        <br />
+
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" />
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" />
+        <br />
+
+        <label for="phone-number">Phone Number:</label>
+        <input type="text" name="phone-number" id="phone-number" />
+        <br />
+
+        <label for="iq">IQ:</label>
+        <input type="text" name="iq" id="iq" />
+        <br />
+
+        <p class="gender-title">Gender</p>
+
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <br />
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br />
+
+        <input type="radio" name="gender" id="other" value="other" />
+        <label for="other">Other</label>
+        <br />
+        <br />
+
+        <label for="date">Date of Proposed Outing:</label>
+        <input type="date" name="date" id="date" />
+      </fieldset>
+
+      <fieldset>
+        <p class="checkbox-title">Check All That Apply</p>
+
+        <input type="checkbox" name="option1" id="option1" />
+        <label for="option1">I have tattos and/or piercings</label>
+        <br />
+
+        <input type="checkbox" name="option2" id="option2" />
+        <label for="option2"
+          >I am more than 2 years older than my daughter</label
+        >
+        <br />
+
+        <input type="checkbox" name="option3" id="option3" />
+        <label for="option3">I own a panel van or V8 ute</label>
+        <br />
+
+        <input type="checkbox" name="option4" id="option4" />
+        <label for="option4">I work full-time</label>
+        <br />
+
+        <input type="checkbox" name="option5" id="option5" />
+        <label for="option5">My parents are rich</label>
+        <br />
+
+        <input type="checkbox" name="option6" id="option6" />
+        <label for="option6">Is the date at a well lit public location</label>
+        <br />
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <label for="political">Political Persuasion:</label>
+        <select name="political" id="political">
+          <option value="left">Left Wing</option>
+          <option value="right">Right Wing</option>
+        </select>
+
+        <label for="education">Education Level Completed:</label>
+        <select name="education" id="education">
+          <option value="university">University</option>
+          <option value="high-school">High-school</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <p>Essay Section</p>
+        <p>In 50 words or more explain why you want to date mt daughter</p>
+        <textarea
+          name="reason"
+          id=""
+          cols="50"
+          rows="5"
+          placeholder="Enter Text Here"
+        ></textarea>
+        <br />
+        <span>Please upload contact details for 2 references</span>
+        <br />
+        <textarea
+          name="contact-details"
+          id=""
+          cols="50"
+          rows="5"
+          placeholder="Enter Text Here"
+        ></textarea>
+        <br />
+        <br />
+
+        <label for="file">
+          Upload Police Clearance Certificate, Bank Statement and Medical
+          Certificates here:
+        </label>
+        <!-- <input type="file" name="file" id="file" /> -->
+        <button type="button" name="file" id="file">Attach Files</button>
+        <br />
+        <br />
+      </fieldset>
+      <button type="submit">Send your application</button>
+    </form>
+  </body>
+</html>

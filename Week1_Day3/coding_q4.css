@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f6fa;
+  height: 20%;
+}
+
+aside h1 {
+  text-align: center;
+}
+
+.table-of-poems {
+  height: auto;
+  overflow-y: scroll;
+}
+
+a:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+a {
+  display: block;
+  border-top: 1px solid black;
+  text-decoration: none;
+  color: #7253ed;
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+main {
+  border-top: 1px solid #f5f5f5;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+main h1 {
+  padding-left: 10px;
+}
+
+main span {
+  padding-left: 30px;
+  line-height: 1.75em;
+  font-size: 1.25em;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside {
+    width: 20%;
+    height: 100%;
+  }
+
+  main {
+    border: none;
+    border-left: 1px solid #f5f5f5;
+    padding-left: 10px;
+    width: 80%;
+    height: 100%;
+  }
+}
